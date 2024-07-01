@@ -6,8 +6,6 @@ function lastReplacement($branch,$code){
     return "SELECT MAX(fecha) from movimientos_de_productos where entrada>0 and codigo=".$code." and (descripcion = 'recibido en ".$branch."' or descripcion= 'compra')";
 };
 function StockBranch($branch,$code,$date){
-    //return "SELECT * FROM productos WHERE `stock ".$branch."`> 0";
-    //return "SELECT * FROM productos WHERE codigo = 279627";
     return "select SUM(entrada) from movimientos_de_productos where fecha='".$date."' and entrada>0 and codigo= ".$code." and (descripcion= 'recibido en ".$branch."' or descripcion='compra')";
 }
 function LastSaleDayBranch($branch,$code){

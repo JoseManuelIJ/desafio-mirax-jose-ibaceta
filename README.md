@@ -8,6 +8,8 @@ Para utilizar este código la base de datos debe contener las siguientes caracte
 
 -contraseña: password
 
+El archivo principal es desafio.php
+
 Al iniciar el programa, es necesario indicar la sucursal y la cantidad de días a través de la consola.
 
 -Opciones de sucursal: 
